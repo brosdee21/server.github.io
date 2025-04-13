@@ -6,6 +6,10 @@ const Job = require('./models/Jobs');
 
 dotenv.config();
 const app = express();
+
+const corsOption ={
+  origin:"*",methods:['POST'],
+}
 app.use(cors());
 app.use(express.json());
 
